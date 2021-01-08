@@ -1,4 +1,4 @@
-package com.bharath.patterns.com.bharath.patterns.prototype;
+package com.bharath.patterns.prototype;
 
 
 public class Game implements Cloneable {
@@ -25,5 +25,13 @@ public class Game implements Cloneable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Game{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
